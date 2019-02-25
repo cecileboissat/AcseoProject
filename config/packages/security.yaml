@@ -1,0 +1,29 @@
+security:
+    encoders:
+        App\Entity\User:
+            algorithm: bcrypt
+
+    providers:
+        in_memory: { memory: ~ }
+        mon_login:
+            entity:
+                # ON VA UTILISER NOTRE ENTITE User AVEC LA PROPRIETE username POUR LE LOGIN
+                class: App\Entity\User
+                property: username
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: true
+            provider: mon_login
+            form_login:
+                login_path: security_login
+                check_path: security_login
+            logout:
+                path: security_logout
+                target: security_login
+
+    access_control:
+# AJOUTER ICI LES URLS DES ESPACES PROTEGES ET LE ROLE NECESSAIRE POUR Y ACCEDER    
+        - { path: ^/admin, roles: ROLE_ADMIN }

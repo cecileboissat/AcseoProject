@@ -1,0 +1,14 @@
+{{ form_start(form) }}
+    <div class="hidden">
+        {{ form_widget(form.name) }}
+    </div>
+    <div class="hidden">
+        {{ form_widget(form.email) }}
+    </div>
+    <div class="hidden">
+        {{ form_widget(form.message) }}
+    </div>
+    {{ form_label(form.response, 'Le message a-t-il été traité ?') }}
+    {{ form_widget(form.response) }}
+    <button>{{ button_label|default('Mettre à jour') }}</button>
+{{ form_end(form) }}

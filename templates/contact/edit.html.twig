@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Contact{% endblock %}
+
+{% block stylesheets %}<link rel="stylesheet" href="{{ absolute_url(asset('assets/css/style-update.css')) }} ">{% endblock %}
+
+{% block body %}
+<main>
+
+    {{ include('contact/_formEdit.html.twig', {'button_label': 'Save'}) }}
+
+    <a href="{{ path('contact_index') }}">Retour</a>
+</main>
+    {# {{ include('contact/_delete_form.html.twig') }} #}
+{% endblock %}

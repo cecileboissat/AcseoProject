@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}<link rel="stylesheet" href="{{ absolute_url(asset('assets/css/style-connexion.css')) }} ">{% endblock %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+<main>
+    {{ form_start(form) }}
+        {{ form_widget(form.username, {'attr': {'placeholder': 'User'}}) }}
+        {{ form_widget(form.password, {'attr': {'placeholder': 'Password'}}) }}
+        <button>{{ button_label|default('INSCRIPTION') }}</button>
+        <div class="content">{{ messageForm ?? "" }}</div>
+    {{ form_end(form) }}
+</main>
+{% endblock %}

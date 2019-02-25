@@ -1,0 +1,11 @@
+{{ form_start(form) }}
+    {{ form_widget(form.name, {'attr': {'placeholder': 'Nom*', 'class' : 'maclass'}}) }}
+    {{ form_widget(form.email, {'attr': {'placeholder': 'Email*'}}) }}
+    {{ form_widget(form.message, {'attr': {'placeholder': 'Message*', 'cols':'35', 'rows':'6'}}) }}
+    <div class="hidden">
+        {{ form_widget(form.response) }}
+    </div>
+    <div class="content">Les champs marqués (*) sont obligatoires.</div>
+    <button>{{ button_label|default('Envoyer') }}</button>
+    <div class="content">{{ messageForm ?? "" }}</div>
+{{ form_end(form) }}

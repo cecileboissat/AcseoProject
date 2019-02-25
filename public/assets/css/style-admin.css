@@ -1,0 +1,54 @@
+body {
+    background: #F7F7F7;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+h4{
+    padding: 15px 0;
+    color: #2A3F54;
+}
+table{
+    background: white;
+    border: 1px solid lightgrey;
+    font-size: 0.9rem;
+}
+thead{
+    background-color: #EDEDED;
+    color: #2A3F54;
+}
+tbody tr:nth-child(even){
+    background: #F7F7F7;
+}
+tbody tr:nth-child(odd){
+    background: white;
+}
+img{
+    background-color: #F8F7FC;
+    border-radius: 50%;
+    width: 30px;
+}
+a, a:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+nav a:hover{
+    color: lightgrey;
+}
+.mailto, .mailto:hover{
+    text-decoration: underline;
+    font-weight: normal;
+    color: #333;
+}
+.mailto:hover{
+    color: #169F85;
+}
+ul{
+    padding: 5px 0;
+}
+td span{
+    background: #1abb9c;
+    padding: 2px 5px;
+    border: 1px solid #169F85;
+    border-radius: 4px;
+}

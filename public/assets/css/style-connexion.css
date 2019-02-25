@@ -1,0 +1,58 @@
+body {
+    font-size: 1.1rem;
+    background: #F8F7FC;
+    height : 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 1px rgba(43, 43, 43, 0.3);
+    padding: 0 0 25px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 0
+}
+input {
+    border: 1px solid #CCCCCC;
+    background-color: #F1F0F5;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 10px;
+    width: 220px;
+}
+input::placeholder {
+    font-size: 1rem;
+    color: #AAAAAA;
+}
+button {
+    width: 100px;
+    margin: 0 auto;
+    background: #1EB980;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* ---------------------------------------------
+---------------- MEDIA QUERIES -----------------
+--------------------------------------------- */
+@media screen and (max-width: 250px) {
+    input {
+        width: auto;
+    }
+}

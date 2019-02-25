@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}<link rel="stylesheet" href="{{ absolute_url(asset('assets/css/style-connexion.css')) }} ">{% endblock %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+<main>
+    <form action="{{ path('security_login') }}" method="post">
+        <input type="text" placeholder="Username" required name="_username">
+        <input type="password" placeholder="Password" required name="_password">
+        <button type="submit" href="{{ url("contact_index") }}">Login</button>
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,46 @@
+body {
+    font-size: 1.1rem;
+    height : 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 1px rgba(43, 43, 43, 0.3);
+    padding: 0 0 25px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+form label{
+    padding-bottom: 15px;
+}
+button {
+    width: 100px;
+    margin: 25px auto;
+    background: #EC971F;
+    border: 1px solid #D58512;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.hidden{
+    display: none;
+}
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
